@@ -1,0 +1,23 @@
+{
+  "name": "kpi-utils",
+  "version": "0.1.0",
+  "description": "This project describes utilities to gather, process and produce metrics and KPI from data sources.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
+  }
+}
