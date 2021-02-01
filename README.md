@@ -11,4 +11,19 @@ The idea is to gather tickets from a filter query. From the tickets, we will gat
     * JIRA_USER_TOKEN
     * JIRA_BASE_URL 
 
+### Getting started 
+
+Running a script:
+
+``` 
+node .\cli\jira-issue-detail.js -i REC-55647 -o test.json
+```
+where **i** describes the issue reference, and **o** the output file. If no output file is provided, the answer is directed to the console.
+The data returned is transformed from the data provided from jira. In order to access raw data, please provide the **-r true** parameter to the command line.
+
+Using the debugger:
+
+``` 
+ $env:NODE_DEBUG='api-client' ; node .\cli\jira-issue-detail.js -i REC-55647 -o test.json
+```
 
