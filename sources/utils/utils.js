@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+const path = require('path');
 
 function processError(err) {
   if (err) {
@@ -14,6 +15,14 @@ function processError(err) {
   }
 }
 
+function getPath(fileName) {
+  if (path.isAbsolute(fileName)) {
+    return path.normalize(fileName);
+  }
+  return path.normalize(path.join(process.cwd(), fileName));
+}
+
 module.exports = {
   processError,
+  getPath,
 };

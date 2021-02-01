@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/jest",
-    "start": "node index.js"
+    "start": "node sources/index.js",
+    "debug-issue": "$env:NODE_DEBUG='api-client' ; node cli/jira-issue-detail.js"
+  },
+  "bin": {
+    "jira-issue": "./cli/jira-issue-detail.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "moment": "^2.29.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
     "eslint": "^7.18.0",

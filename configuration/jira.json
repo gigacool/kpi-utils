@@ -1,0 +1,9 @@
+{
+  "fields": {
+    "STORY_POINTS": "customfield_10004",
+    "PRODUCT_LINE": "customfield_11101",
+    "SPRINTS": "customfield_10007",
+    "PATCH_TYPE": "customfield_14704",
+    "SEVERITY": "customfield_12400"
+  }
+}
